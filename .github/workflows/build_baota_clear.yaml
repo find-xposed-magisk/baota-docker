@@ -73,5 +73,6 @@ jobs:
           bash build_clear.sh
           docker images
 
-     # - name: push
-     #  run: |
+    - name: push
+      run: |
+          bash push_clear.sh
