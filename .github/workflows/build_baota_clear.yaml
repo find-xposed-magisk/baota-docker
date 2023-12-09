@@ -65,8 +65,7 @@ jobs:
     - name: 登录dockerhub并执行脚本
       run: |
           bash ./../$MYORIGINAL_REPOSITORY/build/登录docker.sh
-          
-    
+            
     - name: build
       run: |
           bash ./../$MYORIGINAL_REPOSITORY/build/build_clear.sh
