@@ -68,9 +68,9 @@ jobs:
             
     - name: build
       run: |
-          bash ./../$MYORIGINAL_REPOSITORY/build/build_clear.sh
+          bash ./../$MYORIGINAL_REPOSITORY/build/baota/build_clear.sh
           docker images
 
     - name: push
       run: |
-          bash push_clear.sh
+          bash ./../$MYORIGINAL_REPOSITORY/build/baota/push_clear.sh
