@@ -67,10 +67,9 @@ jobs:
           cd ./../$MYORIGINAL_REPOSITORY
           echo $DOCKER_TOKEN | docker login -u your-dockerhub-username --password-stdin
     
-    
-     - name: build
-      run: |
+     # - name: build
+     #  run: |
 
         
-     - name: push
-      run: |
+     # - name: push
+     #  run: |
