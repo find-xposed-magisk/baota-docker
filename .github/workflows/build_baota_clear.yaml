@@ -64,8 +64,8 @@ jobs:
 
     - name: 登录dockerhub并执行脚本
       run: |
-          cd ./../$MYORIGINAL_REPOSITORY
-          echo $DOCKER_TOKEN | docker login -u your-dockerhub-username --password-stdin
+          bash ./../$MYORIGINAL_REPOSITORY/build/登录docker.sh
+          
     
      # - name: build
      #  run: |
