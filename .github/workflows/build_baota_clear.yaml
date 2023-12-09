@@ -63,7 +63,7 @@ jobs:
           echo "克隆和重置完成 (Cloning and resetting completed)"
 
     - name: 登录dockerhub并执行脚本
-        run: |
+      run: |
           cd ./../$MYORIGINAL_REPOSITORY
           echo $DOCKER_TOKEN | docker login -u your-dockerhub-username --password-stdin
     
