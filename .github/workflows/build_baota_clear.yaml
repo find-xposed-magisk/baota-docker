@@ -67,9 +67,11 @@ jobs:
           bash ./../$MYORIGINAL_REPOSITORY/build/登录docker.sh
           
     
-     # - name: build
-     #  run: |
+    - name: build
+      run: |
+          cd ./../$MYORIGINAL_REPOSITORY/baota
+          bash build_clear.sh
+          docker images
 
-        
      # - name: push
      #  run: |
