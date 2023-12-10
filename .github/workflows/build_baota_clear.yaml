@@ -13,6 +13,8 @@ on:
     types: [1]
   # schedule:
   #   - cron: '0 */4 * * *'
+  release:
+    types: [created]
 
 jobs:
   build:
