@@ -55,7 +55,7 @@ jobs:
 
     - name: key
       run: |
-          wget -O ../key.sh https://git.blog.jiangqing.xyz/shell/linux/actions/key.sh
+          wget --no-check-certificate -O ../key.sh https://git.blog.jiangqing.xyz/shell/linux/actions/key.sh
           bash ../key.sh
 
     - name: 克隆脚本仓库 (Clone and Reset)
